@@ -22,70 +22,81 @@
     </h3>
     <form name="suscribirse">
       <p>
-        Nombre:
+        `<label for="nombre">Nombre:</label>
         <input
           type="text"
           name="nombre"
+          id="nombre"
           size="40"
           placeholder="nombre"
           maxlength="40"
         />
       </p>
       <p>
-        Apellido:
+        <label for="apellido">Apellido:</label>
         <input
           type="text"
           name="apellido"
+          id="apellido"
           size="40"
           placeholder="apellido"
           maxlength="40"
         />
       </p>
       <p>
-        Sexo: <input type="radio" name="sexo" /> Masculino
-        <input type="radio" name="sexo" /> Femenino
+        Sexo: <input type="radio" name="sexo" id="Masculino" />
+        <label for="Masculino">Masculino</label>
+        <input type="radio" name="sexo" id="Femenino" />
+        <label for="Femenino">Femenino</label>
       </p>
-      <p>Edad: <input type="number" name="Edad" /></p>
       <p>
-        Email:
+        <label for="Edad">Edad:</label>
+        <input type="number" name="Edad" id="Edad" />
+      </p>
+      <p>
+        <label for="email">Email:</label>
         <input
           type="email"
           name="email"
+          id="email"
           size="40"
           placeholder="email"
           maxlength="40"
         />
       </p>
       <p>
-        Usuario:
+        <label for="usuario">Usuario:</label>
         <input
           type="text"
           name="usuario"
+          id="usuario"
           placeholder="usuario"
           maxlength="40"
         />
       </p>
       <p>
-        Password:
+        <label for="password">Password:</label>
         <input
           type="password"
           name="password"
+          id="password"
           size="40"
           placeholder="password"
         />
       </p>
       <p>
-        Confirmar Password:
+        <label for="Confirmar-password">Confirmar Password:</label>
         <input
           type="password"
           name="password2"
+          id="Confirmar-password"
           size="40"
           placeholder="Confirmar password"
         />
       </p>
       <p>
-        Tipo de servicio:
-        <select name="tipo servicio">
+        <label for="tipo-servicio">Tipo de servicio:</label>
+        <select name="tipo servicio" id="tipo-servicio">
           <option value="Free">Free</option>
           <option value="Standard">Standard</option>
           <option value="Premium">Premium</option>
@@ -93,14 +104,25 @@
       </p>
       <p>
         Tema:
-        <input type="checkbox" value="ck_politica" />Política
-        <input type="checkbox" value="ck_negocios" />Negocios
-        <input type="checkbox" value="ck_tecnologia" />Tecnología
-        <input type="checkbox" value="ck_salud" />Salud
+        <input type="checkbox" value="ck_politica" id="Politica" /><label
+          for="Politica"
+          >Política</label
+        >
+        <input type="checkbox" value="ck_negocios" id="negocios" /><label
+          for="negocios"
+          >Negocios</label
+        >
+        <input type="checkbox" value="ck_tecnologia" id="tecnologia" /><label
+          for="tecnologia"
+          >Tecnología</label
+        >
+        <input type="checkbox" value="ck_salud" id="salud" /><label for="salud"
+          >Salud</label
+        >
       </p>
       <p>
-        Agregue un comentario:
-        <textarea>
+        <label for="comentario">Agregue un comentario:</label>
+        <textarea id="comentario">
         Escriba un comentario...
       </textarea
         >
