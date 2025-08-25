@@ -21,6 +21,8 @@
       Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!
     </h3>
     <form name="suscribirse">
+      <fieldset>
+        <legend>Persona</legend>
       <p>
         `<label for="nombre">Nombre:</label>
         <input
@@ -53,7 +55,10 @@
         <label for="Edad">Edad:</label>
         <input type="number" name="Edad" id="Edad" />
       </p>
+      </fieldset>
       <p>
+        <fieldset>
+          <legend>Tipo de cuenta</legend>
         <label for="email">Email:</label>
         <input
           type="email"
@@ -94,6 +99,9 @@
           placeholder="Confirmar password"
         />
       </p>
+      </fieldset>
+      <fieldset>
+        <legend>Tipo de servicio</legend>
       <p>
         <label for="tipo-servicio">Tipo de servicio:</label>
         <select name="tipo servicio" id="tipo-servicio">
@@ -127,6 +135,7 @@
       </textarea
         >
       </p>
+      </fieldset>
       <p>
         <button type="button">Boton de Enviar</button>
       </p>
