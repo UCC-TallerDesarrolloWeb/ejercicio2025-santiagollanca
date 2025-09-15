@@ -3,6 +3,7 @@
   <head>
     <title>Catálogo de Productos</title>
     <link rel="stylesheet" href="store.css" type="text/css" />
+    <script type="text/javascript" src="misFunciones.js"></script>
   </head>
   <body class="grid-container">
     <header class="item1">Catálogo de Productos</header>
@@ -26,13 +27,19 @@
         </fieldset>
       </form>
     </aside>
-    <main>
+    <main class="item4">
+      <dialog id="detalle">
+        <h2>Detalle del producto</h2>
+        <h3>Cabezal Cerrado</h3>
+        <p>Este producto viene del talle 1 al 3</p>
+      </dialog>
       <div>
         <img
           src="../Ejercicios-JavaScript/images/cabezal-cerrado.webp"
           alt="cabezal-cerrado"
         />
         <h3>Cabezal Cerrado</h3>
+        <button type="button" onclick="mostrarDetalle()">Ver detalle</button>
       </div>
       <div>
         <img
