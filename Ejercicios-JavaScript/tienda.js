@@ -69,3 +69,11 @@ let mostrarDetalle = () => {
 let cerrarModal = () => {
   document.getElementById("detalle").style.display = "none";
 }
+
+let mostrarCatalogo = () => {
+  let contenido = "";
+  productos.forEach((prod) => {
+  })
+}
+
+document.getElementById("catalogo").innerHTML = contenido;
