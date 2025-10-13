@@ -1,46 +1,43 @@
-import { useState } from "react";
-import "./Login.css";
+import {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
+import './styles/login.scss';
 
 const Login = () => {
-  const [usuario, setUsuario] = useState("");
-  const [password, setPassword] = useState("");
+    const [Usuario, setUsuario] = useState('');
+    const [Password, setPassword] = useState('');
+    const navigate = useNavigate();
 
-  const handlerLogin = async (e) => {
-    e.preventDefault();
+    const handlerLogin = async (e) => {
+        e.preventDefault();
 
-    if (usuario === "admin" && password === "admin") {
-      console.log("Login OK");
-    } else {
-      console.log("Login ERROR");
+        if(Usuario === 'admin' && Password === 'admin'){
+            console.log('Login OK');
+            navigate('/actividades');
+        } else {
+            console.log('Login ERROR');
+        }
     }
-  };
 
-  return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={handlerLogin}>
-        <h2>Iniciar Sesion</h2>
-        <label htmlFor="usuario">Usuario:</label>
-        <input
-          id="usuario"
-          type="text"
-          placeholder="Usuario"
-          value={usuario}
-          onChange={(e) => setUsuario(e.target.value)}
-          required
-        />
-        <label htmlFor="password">Password:</label>
-        <input
-          id="password"
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Ingresar</button>
-      </form>
-    </div>
-  );
-};
+    return (
+        <div className="login-container">
+            <form className="login-form" onSubmit={handlerLogin}>
+                <h2>Iniciar Sesión</h2>
+                <label htmlFor="usuario">Usuario</label>
+                <input type="text"
+                placeholder="Usuario"
+                value = {Usuario}
+                onChange = {(e) => setUsuario(e.target.value)}
+                required />
+                <label htmlFor="password">Contraseña</label>
+                <input type="password"
+                placeholder="Contraseña"
+                value={Password}
+                onChange = {(e) => setPassword(e.target.value)}
+                required />
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    )
+}
 
 export default Login;
