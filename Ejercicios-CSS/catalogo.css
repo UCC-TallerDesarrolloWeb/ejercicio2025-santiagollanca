@@ -1,26 +1,23 @@
 :root {
-  --color-primario: rgb(91, 16, 16);
-  --color-secundario: rgb(7, 7, 112);
-  --color-letra: white;
+  --color-primario: rgb(120, 11, 11);
+  --color-secundario: rgb(35, 11, 120);
+  --color-texto: white;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 main {
   display: grid;
   grid-template-columns: auto auto auto;
-  text-align: center;
 }
 
 main div {
   border: 1px solid black;
+  margin: 10px;
+  text-align: center;
   border-radius: 15px;
-  margin: 15px;
-  padding: 15px;
+  padding: 10px;
 }
 
-div img {
+img {
   width: 100%;
 }
 
@@ -51,23 +48,20 @@ div img {
     "nav nav nav nav"
     "aside main main main"
     "footer footer footer footer";
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-letra);
   background-color: var(--color-primario);
+  color: var(--color-texto);
+  font-weight: 500;
   padding: 5px;
-  transition: background-color 0.8s linear 0.2s;
-  margin: 10px 0px;
+  transition: background-color 0.8s linear 0.2s, padding 0.3 ease;
 }
 
 a:hover {
   background-color: var(--color-secundario);
-}
-
-header {
-  margin: 0 0 20px 0;
-  background-color: var(--color-primario);
-  color: white;
+  padding: 7px;
 }
