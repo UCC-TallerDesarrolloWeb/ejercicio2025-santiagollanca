@@ -23,122 +23,142 @@
     <form name="suscribirse">
       <fieldset>
         <legend>Persona</legend>
-      <p>
-        `<label for="nombre">Nombre:</label>
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          size="40"
-          placeholder="nombre"
-          maxlength="40"
-        />
-      </p>
-      <p>
-        <label for="apellido">Apellido:</label>
-        <input
-          type="text"
-          name="apellido"
-          id="apellido"
-          size="40"
-          placeholder="apellido"
-          maxlength="40"
-        />
-      </p>
-      <p>
-        Sexo: <input type="radio" name="sexo" id="Masculino" />
-        <label for="Masculino">Masculino</label>
-        <input type="radio" name="sexo" id="Femenino" />
-        <label for="Femenino">Femenino</label>
-      </p>
-      <p>
-        <label for="Edad">Edad:</label>
-        <input type="number" name="Edad" id="Edad" />
-      </p>
-      </fieldset>
-      <p>
-        <fieldset>
-          <legend>Tipo de cuenta</legend>
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          size="40"
-          placeholder="email"
-          maxlength="40"
-        />
-      </p>
-      <p>
-        <label for="usuario">Usuario:</label>
-        <input
-          type="text"
-          name="usuario"
-          id="usuario"
-          placeholder="usuario"
-          maxlength="40"
-        />
-      </p>
-      <p>
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          size="40"
-          placeholder="password"
-        />
-      </p>
-      <p>
-        <label for="Confirmar-password">Confirmar Password:</label>
-        <input
-          type="password"
-          name="password2"
-          id="Confirmar-password"
-          size="40"
-          placeholder="Confirmar password"
-        />
-      </p>
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            size="40"
+            maxlength="30"
+            placeholder="Ingrese su Nombre"
+          />
+        </p>
+        <p>
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            size="40"
+            maxlength="30"
+            placeholder="Apellido"
+          />
+        </p>
+        <p>
+          Sexo:
+          <input type="radio" name="genero" value="masculino" id="masculino" />
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="genero" value="femenino" id="femenino" />
+          <label for="femenino"> Femenino </label>
+          <input type="radio" name="genero" value="noComp" id="noCompartir" />
+          <label for="noCompartir"> Prefiero No Compartirlo </label>
+        </p>
+        <p>
+          <label for="edad">Edad:</label>
+          <input
+            type="number"
+            name="edad"
+            id="edad"
+            placeholder="Edad"
+            maxlength="3"
+          />
+        </p>
       </fieldset>
       <fieldset>
-        <legend>Tipo de servicio</legend>
-      <p>
-        <label for="tipo-servicio">Tipo de servicio:</label>
-        <select name="tipo servicio" id="tipo-servicio">
-          <option value="Free">Free</option>
-          <option value="Standard">Standard</option>
-          <option value="Premium">Premium</option>
-        </select>
-      </p>
-      <p>
-        Tema:
-        <input type="checkbox" value="ck_politica" id="Politica" /><label
-          for="Politica"
-          >Política</label
-        >
-        <input type="checkbox" value="ck_negocios" id="negocios" /><label
-          for="negocios"
-          >Negocios</label
-        >
-        <input type="checkbox" value="ck_tecnologia" id="tecnologia" /><label
-          for="tecnologia"
-          >Tecnología</label
-        >
-        <input type="checkbox" value="ck_salud" id="salud" /><label for="salud"
-          >Salud</label
-        >
-      </p>
-      <p>
-        <label for="comentario">Agregue un comentario:</label>
-        <textarea id="comentario">
-        Escriba un comentario...
-      </textarea
-        >
-      </p>
+        <legend>Información de la Cuenta</legend>
+        <p>
+          <label for="email"> Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            size="40"
+            placeholder="Email"
+            maxlength="40"
+          />
+        </p>
+        <p>
+          <label for="usuario"> Usuario: </label>
+          <input
+            type="text"
+            name="usuario"
+            size="40"
+            placeholder="Usuario"
+            maxlength="30"
+          />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="pass"
+            id="password"
+            size="40"
+            placeholder="Password"
+            maxlength="30"
+          />
+        </p>
+        <p>
+          <label for="confirmar-pasword"> Confirmar Password: </label>
+          <input
+            type="password"
+            name="pass2"
+            id="confirmar-pasword"
+            size="40"
+            placeholder="Password"
+            maxlength="30"
+          />
+        </p>
       </fieldset>
-      <p>
-        <button type="button">Boton de Enviar</button>
-      </p>
+      <fieldset>
+        <legend>Tipo de Servicio</legend>
+        <p>
+          <label for="tipo-servicio"> Tipo de servicio: </label>
+          <select name="tipo-servicio" id="tipo-servicio">
+            <option value="free">Free</option>
+            <option value="standard">Standard</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </p>
+        <p>
+          Tema:
+          <input
+            type="checkbox"
+            name="ck_politica"
+            id="politica"
+            value="politica"
+          />
+          <label for="politica"> Política </label>
+
+          <input
+            type="checkbox"
+            name="ck_negocios"
+            id="negocios"
+            value="negocios"
+          />
+          <label for="negocios"> Negocios </label>
+
+          <input
+            type="checkbox"
+            name="ck_tecnologia"
+            id="tecnologia"
+            value="tecnologia"
+          />
+          <label for="tecnologia"> Tecnología </label>
+
+          <input type="checkbox" id="salud" name="ck_salud" value="salud" />
+          <label for="salud"> Salud </label>
+        </p>
+        <p>
+          <label for="comentario"> Agregue un comentario: </label>
+          <textarea id="comentario">
+            Escriba un comentario...
+        </textarea
+          >
+        </p>
+      </fieldset>
+      <button type="button">Boton de Enviar</button>
     </form>
   </body>
 </html>
