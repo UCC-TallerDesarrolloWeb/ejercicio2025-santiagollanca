@@ -6,7 +6,7 @@
   #navbar .container {
     flex-direction: column;
   }
-  #navbar .container ul li {
+  #navbar ul li {
     margin-left: 0;
     padding: 15px;
   }
@@ -52,7 +52,7 @@ a {
 }
 
 .bk-primary {
-  background-color: #eaa600;
+  background: #eaa600;
 }
 
 .btn {
@@ -65,7 +65,7 @@ a {
   border: none;
 }
 .btn-light {
-  background-color: white;
+  background-color: #fff;
   color: #000;
 }
 
@@ -98,7 +98,7 @@ a {
   color: #fff;
 }
 #showcase .bk-primary {
-  padding: 40px 60px;
+  padding: 40px 80px;
 }
 #showcase .bk-primary p {
   padding: 10px 0;
